@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ='desription' content='vegetarian food'>
+    <link rel="icon" href="image/go.ico">   
+     <script src="https://kit.fontawesome.com/fe706c5c83.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>cart</title>
+    <style>
+     .product-header{
+       display:grid;
+       grid-template-columns: 40rem 30rem 30rem 40rem 30rem 0rem;
+       border-bottom: 1px solid;
+       
+        
+        }
+        .product-title{
+            margin-left:10rem;
+        }
+       
+        img
+        {
+            width:300px;
+            height:200px;
+        }
+        .products
+        {
+           display: grid;
+           grid-template-columns:40rem 30rem 30rem 40rem 30rem 5rem;
+           grid-row-gap: 3rem;
+           padding:1rem ;
+           color: black;
+           font-size: 2rem;
+        }
+        button{
+            background-color: black;
+            float: right;
+            
+        }
+        .Totalamount{
+            margin-left: 10REM;
+            color: black;
+        }
+        .order{
+          
+            background-color: black;
+           padding:0.3rem;
+            width:30%;
+            margin-left: 3rem;
+            text-align: center;
+        }
+
+        a
+        {
+            color:white;
+        }
+        #mytarget a{
+            color:white;
+        }
+        .but{
+            background-color: orangered;
+        }
+        @media only screen and (max-width:800px){
+            .product-header{
+       display:none;
+       grid-template-columns: auto;
+       border-bottom: 1px solid;
+       
+        
+        }
+        .products
+        {
+           display: grid;
+           grid-template-columns:auto;
+           grid-row-gap: 1rem;
+           padding:1rem ;
+           color: black;
+           font-size: 2rem;
+        }
+        .Totalamount{
+            margin-left: 0REM;
+            color: black;
+        }
+        .order{
+          
+            background-color: black;
+           padding:0.3rem;
+            width:30%;
+            margin-left: 0rem;
+            text-align: center;
+        }
+        }
+    </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <button  data-toggle="collapse" data-target="#mytarget" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand">
+                    <a href="index.html"> Welcome to go3</a>
+                </div>
+    
+            </div>
+            <div id="mytarget" class="collapse navbar-collapse">
+       
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="dish.html">Home</a></li>
+                <li class="dropdown">
+                    <a href=""  data-toggle="dropdown"class="dropdown-toggle">
+                        menu  <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li> <a href="veg.html">Veg</a></li>
+                        <li><a href="Nonveg.html">Non-Veg</a></li>
+                        <li><a href="snack.html">Snacks</a></li>
+                    </ul></li>
+     
+                <li><a href="about.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            </div>
+        </nav>
+        <div class="products-container">
+            <div class="product-header">
+                <h5 class="product-title">
+                    PRODUCT
+                </h5>
+                <h5 class="product-name">
+                    PRODUCTNAME
+                </h5>
+                <h5 class="product-price">
+                    PRICE
+                </h5>
+                <h5 class="quantity">
+                    QUANTITY
+                </h5>
+                <h5 class="total">
+                    TOTAL
+                </h5>
+                <h5 class="removed">
+                    DELETE
+                </h5>
+            </div>
+<div class="products">
+
+</div>
+
+    </div>   
+    </body>
+    <script src="buy.js"></script>
+    </html>

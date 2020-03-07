@@ -1,0 +1,131 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   
+}
+body{
+    background-color: whitesmoke;
+}
+nav{
+    padding: 0.5rem 3rem;
+   
+}
+nav:hover{
+    color:white;
+}
+#disp
+{
+    display: grid;
+    grid-template-columns:80rem 55rem 0rem;
+    color:black;
+    background-image:linear-gradient(white,dimgrey);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.cont{
+  display: grid;
+  grid-template-columns: auto 60rem auto ;
+}
+.one
+{
+    margin-top: 10rem;
+}
+.fish{
+    margin-left: 5rem;
+    padding:1rem;
+}
+.box{
+    border:1px groove;
+    width:35%;
+    color:black;
+    text-align: center;
+    margin-left: 5rem;
+   
+}
+p{
+    color:black;
+    font-size: 2rem;
+
+}
+.shop
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.search{
+    text-align: center;
+    font-size: 3rem;
+    color:black;
+    text-shadow: 3px 3px 4px red;
+}
+#anim
+{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    color:black;
+}
+.online{
+    text-align: center;
+    color:black;
+    font-size: 2.5rem;
+
+}
+h5{
+    color:black;
+    margin-left: 25rem;
+    font-size: 2rem;
+    margin-right: 25rem;
+    border:2px solid;
+    padding:5rem;
+    line-height: 2.7rem;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px black;
+}
+figcaption{
+    font-size: 3.4rem;
+    color:black;
+    text-decoration: none;
+    text-indent: 6rem;
+}
+.align
+{
+display:grid;
+color:white;
+grid-template-columns: auto auto auto auto;
+}
+.connect{
+    color:white;
+}
+.subs{
+    color:black;
+}
+footer{
+    background-color: black;
+}
+#copyright{
+    font-size:2rem;
+}
+#insta{
+  color: crimson;
+  font-size: 3rem;
+  padding-right: 1rem;
+}
+#twit{
+    font-size: 3rem;
+    padding-right: 1rem;
+    color:dodgerblue; 
+}
+#facebook{
+     font-size: 3rem;
+    padding-right: 1rem;
+    color:blue;
+}
+#linked
+{
+    font-size: 3rem;
+    color:dodgerblue;
+}

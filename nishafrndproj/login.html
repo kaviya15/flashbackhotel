@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="log.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href=" go3.ico">
+    <title> go3 Parambriyam--Login </title>
+    <style>
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+   
+}
+html
+{
+    font-size:62.5%;
+}
+
+form
+{
+    position:absolute;
+    top:12%;
+    left:40%;
+    border:2px groove;
+    opacity:0.9;
+}
+h1
+{
+    text-align: center;
+    font-size:5rem;
+    color:crimson;
+    animation: kaviya 2s infinite ease-in-out;
+    font-family: 'Satisfy', cursive;
+
+    
+}
+@keyframes kaviya
+{
+    0%{color:crimson;}
+    50%{color: chartreuse;}
+    100%{color:chocolate;}
+}
+.main
+{
+    padding:1rem 2rem 5rem 4rem;
+}
+.lab
+{
+    font-size:3rem;
+}
+input
+{
+    max-width:100%;
+    font-size:2rem;
+    border:2px ridge;
+    text-indent: 10px;
+    padding:0.5rem 0rem;
+    opacity:0.9;
+}
+.foot
+{
+    max-width:100%;
+    border: 2px ridge;
+    text-align:center;
+    font-size:2rem;
+}
+h2{
+    text-align: center;
+    font-size: 2rem;   
+}
+p
+{
+    text-align:center;
+    font-size:1.5rem;
+}
+.fb
+{
+    font-size:2rem;
+    text-decoration: none;
+    padding-left:2rem;
+}
+img
+{
+    max-width: 100%;
+    border-radius: 10%;
+    position: absolute;
+    top:6.5%;
+    color: aliceblue;
+    left:35%;
+    image-orientation:flip;
+}
+.fpass
+{
+    font-size:2rem;
+}
+.sign
+{
+    position: absolute;
+    top:66%;
+    left:40%;
+    border:2px groove;
+    padding:2rem 3.4rem;
+}
+.login
+{
+    width:100%;
+    background-color:aqua;
+    opacity:1;
+    color:black;
+    padding:0.8rem 0rem;
+}
+@media screen and (max-width:700px)
+{
+  form
+  {
+    position: absolute;
+    left:10%;
+    top:12%;
+    padding:2rem 1.8rem;
+   }
+   
+.sign
+  {
+ position: absolute;
+ top:78%;
+ left:10%;
+ border:2px groove;
+ padding:2rem 5.4rem;
+  } 
+}  
+</style>
+</head>
+<body>
+    <!--
+    <img src="img/go3.png" alt="" width="100" height="100"> -->
+
+    <form  autocomplete="off" action="dish.html">
+        <div class="head">
+            <h1> Login</h1> <br> <br><br><br><br><br>
+  </div>
+        <div class="main">
+
+     <!-- for is used to identifiy input by id  -->   
+      <input  type="email" name="email" class="lb" id="lab1" placeholder="E-mail" required><br><br><br><br>
+      <input  id="pass"minlength="6" name="password" maxlength="8" type="password" placeholder="password" required> <br><br><br><br>
+      <input type="submit" class="login" id ="go" value="login">
+      <br><br><br>
+      <h2>or</h2> <br> <hr>  
+      <br>
+
+         <p class ="fpass">forgot password?</p>
+
+      <br>
+      </div>
+      </form>
+ <h2 class="sign"> Don't have an account?<a href="reg.html" target="_self">signup</a> </h2>
+
+ </div>
+</body>
+<script>
+      
+
+</script>
+</html>

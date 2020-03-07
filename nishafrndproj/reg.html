@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--<?php 
+$servername = "localhost";
+$username = 'root';
+$password='@gmail:com';
+$dbname='userregister';
+$conn = mysqli_connect($servername,$username,$password,$dbname);
+echo('sucess');
+if(isset($_POST['submit']))
+{
+$Name     =  $_POST['username'];
+$email    =  $_POST['email'];
+$number   =  $_POST['number'];
+$password =  $_POST['password'];
+$register_query="INSERT INTO `userreg`(`Name`, `email`, `number`, `password`) VALUES ('$Name','$email' ,'$number' ,'$password')";
+$register_result=mysqli_query($conn,$register_query);
+    if($register_result)
+    {
+        if(mysqli_affected_rows($conn)>0)
+        {
+            echo("reg succ");
+        }
+        else
+        {
+            echo("invalid");
+        }
+    }
+}
+
+?>-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="go.ico">
+    <link rel="stylesheet" href="go3.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>go3-signup</title>
+    <style>
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+    
+form
+{
+    position: absolute;
+    top:15%;
+    left:40%;
+    background-color:white;
+    border: 2px groove;
+}
+header
+{
+    padding:2rem 3.5rem 4rem 3.5rem;
+    
+}
+h1,p
+{
+    text-align:center;
+    padding-top:1rem;
+    font-size: 1.5rem;
+}
+h1
+{
+    font-size: 2rem;    color:crimson;
+    animation: kaviya 2s infinite ease-in-out;
+    font-family: 'Satisfy', cursive;   
+}
+@keyframes kaviya
+{
+    0%{color:crimson;}
+    50%{color: chartreuse;}
+    100%{color:chocolate;}
+}
+
+input
+{ 
+    font-size:1rem;
+    padding:0.4rem 0rem 0.4rem 0.8rem;
+}
+#signup
+{
+    
+    background-color: aqua;
+    padding:0.6rem 5.1rem;
+    border:none;
+}
+#icon
+{
+    display: none;
+}
+label{
+    font-size:1.2rem;
+}
+@media screen and (max-width:1000px)
+{
+   form
+   {
+    position:absolute;
+    left:10%;
+   }
+}
+</style>
+</head>
+<body>
+    <form method="post">
+        <h1>go3-signup</h1>
+        <header>
+        <input type="text" name="username"placeholder= "userName"  minlength="5"maxlength ="15" required><br><br>
+        <input type="email" name="email" placeholder="E-mail" required> <br><br>
+        <input type="tel" name="number" placeholder="phone-number" maxlength="10" minlength="10" required> <br><br>
+        <input type="password" name="password" id ="check" placeholder="password"maxlength="10" minlength="8" required> 
+        <i id="icon"class="fa fa-eye"></i>  
+        <i id="iconslash" class="fa fa-eye-slash"></i><br><br>
+        <label>
+        <input type="checkbox">   <a href="#"> Terms & conditions</a> </label> <br><br> <br>
+        <input  id ="signup" type="submit" name="submit" value ="sign up"><br><br>
+        <h3>Have an Accout ? <a href="login.html">login</a> </h3>
+        </header>
+    </form>
+<script>
+    var z = document.getElementById("check");
+   var x = document.getElementById('iconslash');
+   var y = document.getElementById('icon');
+   x.addEventListener('click', valid);
+   x.addEventListener('click',password);
+  function valid()
+  {
+      y.style.display='block';
+      x.style.display='none';
+  }
+  function password()
+  {
+    if(z.type==password)
+        {
+            z.type=text;
+        }
+        else{
+            z.type=password;
+        }
+  }
+
+  
+ y.addEventListener('click' , close);
+ y.addEventListener('click', eyeslash); 
+ function close()
+ {
+    y.style.display='none';
+      x.style.display='block';
+ }
+ function eyeslash()
+ {
+    if(z.type==passord)
+        {
+            z.type=text;
+        }
+        if(z.type==text)
+        {
+            z.type=password;
+        }
+ }
+
+</script>
+</body>
+</html>

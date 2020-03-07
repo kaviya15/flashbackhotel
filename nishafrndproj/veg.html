@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ='desription' content='vegetarian food'>
+    <link rel="icon" href="image/go.ico">   
+     <script src="https://kit.fontawesome.com/fe706c5c83.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>veg</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        section
+        {
+            background-image: url("image/bgs.jpg");
+            background-repeat:no-repeat;
+            background-position: right;
+          
+            background-size: cover;
+        }
+        a
+        {
+            color:white;
+        }
+        #mytarget a{
+            color:white;
+        }
+        .img1
+        {
+            padding:12rem 0rem 0rem 10rem;
+          
+        }
+        .header
+        {
+            display: grid;
+            margin:10rem 10rem 0rem 30rem;
+            grid-row-gap: 5rem;
+            grid-template-columns: auto auto auto;
+        }
+.align,.align1
+{
+display:grid;
+color:white;
+grid-template-columns: auto auto auto auto;
+}
+        footer{
+    background-color: black;
+}
+#copyright{
+    font-size:2rem;
+}
+#insta{
+  color: crimson;
+  font-size: 3rem;
+  padding-right: 1rem;
+}
+#twit{
+    font-size: 3rem;
+    padding-right: 1rem;
+    color:dodgerblue; 
+}
+#facebook{
+     font-size: 3rem;
+    padding-right: 1rem;
+    color:blue;
+}
+#linked
+{
+    font-size: 3rem;
+    color:dodgerblue;
+}
+.checked
+{
+    color:orange;
+}
+figcaption{
+    font-size: 2rem;
+    color:black;
+    
+}
+button{
+    background: none;
+    border: none;
+    background-color: orange;
+    padding:0.5rem;
+    color:black;
+    font-size: 1.5rem;
+}
+.rupe
+{
+    color:black;
+    font-size: 1.8rem;
+}
+img{
+    max-width:100%;
+}
+.subs{
+    color:black;
+}
+@media only screen  and (max-width:1500px)
+{
+.header{
+            display: grid;
+           margin:8rem;
+            grid-row-gap: 5rem;
+            grid-template-columns: auto auto;
+            grid-column-gap: 10rem;
+        }  
+}
+@media only screen  and (max-width:700px)
+{
+    .header{
+            display: grid;
+           margin:8rem;
+            grid-row-gap: 5rem;
+            grid-template-columns: auto;
+        }  
+.align
+{
+ display:grid;
+ color:white;
+ margin:0rem 0rem 0rem 18rem;
+grid-template-columns: auto;
+}
+.align1
+{
+ display:grid;
+ color:white;
+ margin:0rem 0rem 0rem 12rem;
+grid-template-columns: auto;
+grid-row-gap: 2rem;
+}
+#insta{
+  color: crimson;
+  font-size: 3rem;
+  padding-right: 3rem;
+}
+#twit{
+    font-size: 3rem;
+    padding-right: 3rem;
+    color:dodgerblue; 
+}
+#facebook{
+     font-size: 3rem;
+    padding-right: 3rem;
+    color:blue;
+}
+#linked
+{
+    font-size: 3rem;
+    color:dodgerblue;
+}
+.img1
+        {
+            padding:12rem 0rem 0rem 6rem;
+          
+        }
+}
+   </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button  data-toggle="collapse" data-target="#mytarget" class="navbar-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand">
+                <a href="index.html"> Welcome to go3</a>
+            </div>
+
+        </div>
+        <div id="mytarget" class="collapse navbar-collapse">
+   
+        <ul class="nav navbar-nav navbar-right">
+            <li><a class="clr" href="dish.html">Home</a></li>
+            <li class="dropdown">
+                <a class="clr"href="cart.html"  data-toggle="dropdown"class="dropdown-toggle">
+                    menu  <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li> <a class="clr" href="veg.html">Veg</a></li>
+                    <li><a class="clr" href="Nonveg.html">Non-Veg</a></li>
+                    <li><a href="snack.html">Snacks</a></li>
+                </ul></li>
+                <li><a class="clr" href="cart.html">cart 
+                    <i class="fas fa-shopping-cart">
+                        <span class="span">0</span>
+                    </i>
+                </a></li>
+            <li><a class="clr"href="about.html">About</a></li>
+            <li><a class="clr"href="Contact.html">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+ <section>
+
+    <img class="img1" src="image/log1.png" alt="">
+
+
+ </section>
+ <div class="header">
+  <div class="item">
+      <a href="image/v1.jpg">
+          <img src="image/v1.jpg" alt="" width="350" height="300">
+          <figcaption>
+            Samabar Idly
+          </figcaption></a>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+             <div class="rupe">
+                <i class="fas fa-rupee-sign">
+                   <strong> 50</strong> <del>65</del>
+                </i> 3%off
+            </div>
+            <button class="buy">
+                Order Now
+            </button>
+            <button class="cart1">
+                Add to cart <i class="fas fa-shopping-cart"></i>
+            </button>
+  </div>
+  <div class="item">
+    <a href="image/v2.jpg">
+        <img src="image/v2.jpg" alt=""  width="350" height="300">
+        <figcaption>
+            Poori Masala
+        </figcaption></a>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star"></i>
+           <div class="rupe">
+              <i class="fas fa-rupee-sign">
+                 <strong> 60</strong> <del>79</del>
+              </i> 2%off
+          </div>
+          <button class="buy">
+              Order Now
+          </button>
+          <button class="cart1">
+              Add to cart <i class="fas fa-shopping-cart"></i>
+          </button>
+</div>
+<div class="item">
+    <a href="image/v3.jpg">
+        <img src="image/v3.jpg" alt="" width="350" height="300">
+        <figcaption>
+    Sprouted Idly
+        </figcaption></a>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i> 
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+           <div class="rupe">
+              <i class="fas fa-rupee-sign">
+                 <strong> 80</strong> <del>99</del>
+              </i> 40%off
+          </div>
+          <button class="buy">
+              Order Now
+          </button>
+          <button class="cart1">
+              Add to cart <i class="fas fa-shopping-cart"></i>
+          </button>
+</div>
+<div class="item">
+    <a href="image/v4.jpg">
+        <img src="image/v4.jpg" alt="" width="350" height="300">
+        <figcaption>
+Ghee Pongal
+        </figcaption></a>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star "></i>
+          <i class="fas fa-star "></i>
+           <div class="rupe">
+              <i class="fas fa-rupee-sign">
+                 <strong> 50</strong> <del>79</del>
+              </i> 4%off
+          </div>
+          <button class="buy">
+              Order Now
+          </button>
+          <button class="cart1">
+            Add to cart <i class="fas fa-shopping-cart"></i>
+        </button>
+</div>
+<div class="item">
+    <a href="image/v5.jpg">
+        <img src="image/v5.jpg" alt=""  width="350" height="300">
+        <figcaption>
+       Chapathi
+        </figcaption></a>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star"></i>
+           <div class="rupe">
+              <i class="fas fa-rupee-sign">
+                 <strong> 50</strong> <del>79</del>
+              </i> 3%off
+          </div>
+          <button class="buy">
+              Order Now
+          </button>
+          <button class="cart1">
+            Add to cart <i class="fas fa-shopping-cart"></i>
+        </button>
+</div>
+<div class="item">
+    <a href="image/v6.jpg">
+        <img src="image/v6.jpg" alt=""  width="350" height="300">
+        <figcaption>
+         Ghee Roast dosa
+        </figcaption></a>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+           <div class="rupe">
+              <i class="fas fa-rupee-sign">
+                 <strong> 50</strong> <del>99</del>
+              </i> 6%off
+          </div>
+          <button class="buy">
+              Order Now
+          </button>
+          <button class="cart1">
+            Add to cart <i class="fas fa-shopping-cart"></i>
+        </button>
+</div>
+
+<div class="item">
+    <a href="image/v7.jpg">
+        <img src="image/v7.jpg" alt="" width="350" height="300">
+        <figcaption>
+       Thootuvalai Dosa
+        </figcaption></a>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star"></i>
+           <div class="rupe">
+              <i class="fas fa-rupee-sign">
+                 <strong> 70</strong> <del>99</del>
+              </i> 4%off
+          </div>
+          <button class="buy">
+              Order Now
+          </button>
+          <button class="cart1">
+            Add to cart <i class="fas fa-shopping-cart"></i>
+        </button>
+</div>
+
+<div class="item">
+    <a href="image/v8.jpg">
+        <img src="image/v8.jpg" alt=""  width="350" height="300">
+        <figcaption>
+Raggi Dosa
+        </figcaption></a>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star"></i>
+           <div class="rupe">
+              <i class="fas fa-rupee-sign">
+                 <strong> 120</strong> <del>149</del>
+              </i> 4%off
+          </div>
+          <button class="buy">
+              Order Now
+          </button>
+          <button class="cart1">
+            Add to cart <i class="fas fa-shopping-cart"></i>
+        </button>
+</div>
+
+
+<div class="item">
+    <a href="image/v9.jpg">
+        <img src="image/v9.jpg" alt=""  width="350" height="300">
+        <figcaption>
+      Chollam Dosa
+        </figcaption></a>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+           <div class="rupe">
+              <i class="fas fa-rupee-sign">
+                 <strong> 40</strong> <del>69</del>
+              </i> 10%off
+          </div>
+          <button class="buy">
+              Order Now
+          </button>
+          <button class="cart1">
+            Add to cart <i class="fas fa-shopping-cart"></i>
+        </button>
+</div>
+
+<div class="item">
+    <a href="image/vap.jpg">
+        <img src="image/vap.jpg" alt="" width="350" height="300">
+        <figcaption>
+ Aapam
+        </figcaption></a>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+           <div class="rupe">
+              <i class="fas fa-rupee-sign">
+                 <strong> 50</strong> <del>79</del>
+              </i> 5%off
+          </div>
+          <button class="buy">
+              Order Now
+          </button>
+          <button class="cart1">
+            Add to cart <i class="fas fa-shopping-cart"></i>
+        </button>
+</div>
+
+
+<div class="item">
+    <a href="image/v11.jpg">
+        <img src="image/v11.jpg" alt="" width="350" height="300">
+        <figcaption>
+Meals
+        </figcaption></a>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+           <div class="rupe">
+              <i class="fas fa-rupee-sign">
+                 <strong> 100</strong> <del>109</del>
+              </i> 2%off
+          </div>
+          <button class="buy">
+              Order Now
+          </button>
+          <button class="cart1">
+            Add to cart <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        <div class="item">
+            <a href="image/v12.jpg">
+                <img src="image/v12.jpg" alt=""  width="350" height="300">
+                <figcaption>
+               Keerai rice
+                </figcaption></a>
+                  <i class="fas fa-star checked"></i>
+                  <i class="fas fa-star checked"></i>
+                  <i class="fas fa-star checked"></i>
+                  <i class="fas fa-star checked"></i>
+                  <i class="fas fa-star"></i>
+                   <div class="rupe">
+                      <i class="fas fa-rupee-sign">
+                         <strong> 50</strong> <del>69</del>
+                      </i> 4%off
+                  </div>
+                  <button class="buy">
+                      Order Now
+                  </button>
+                  <button class="cart1">
+                    Add to cart <i class="fas fa-shopping-cart"></i>
+                </button>
+                </div>
+                <div class="item">
+                    <a href="image/v13.jpg">
+                        <img src="image/v13.jpg" alt=""  width="350" height="300">
+                        <figcaption>
+Iddiyapam                        </figcaption></a>
+                          <i class="fas fa-star checked"></i>
+                          <i class="fas fa-star checked"></i>
+                          <i class="fas fa-star checked"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                           <div class="rupe">
+                              <i class="fas fa-rupee-sign">
+                                 <strong> 42</strong> <del>60</del>
+                              </i> 5%off
+                          </div>
+                          <button class="buy">
+                              Order Now
+                          </button>
+                          <button class="cart1">
+                            Add to cart <i class="fas fa-shopping-cart"></i>
+                        </button>
+                        </div>
+                        <div class="item">
+                            <a href="image/v14.jpg">
+                                <img src="image/v14.jpg" alt=""  width="350" height="300">
+                                <figcaption>
+                                    Kizhangu Adai
+                                </figcaption></a>
+                                  <i class="fas fa-star checked"></i>
+                                  <i class="fas fa-star checked"></i>
+                                  <i class="fas fa-star checked"></i>
+                                  <i class="fas fa-star checked"></i>
+                                  <i class="fas fa-star checked"></i>
+                                   <div class="rupe">
+                                      <i class="fas fa-rupee-sign">
+                                         <strong> 50</strong> <del>65</del>
+                                      </i> 4%off
+                                  </div>
+                                  <button class="buy">
+                                      Order Now
+                                  </button>
+                                  <button class="cart1">
+                                    Add to cart <i class="fas fa-shopping-cart"></i>
+                                </button>
+                                </div>
+                                <div class="item">
+                                    <a href="image/v15.jpg">
+                                        <img src="image/v15.jpg" alt=""  width="350" height="300">
+                                        <figcaption>
+                                   Malli Pongal
+                                        </figcaption></a>
+                                          <i class="fas fa-star checked"></i>
+                                          <i class="fas fa-star checked"></i>
+                                          <i class="fas fa-star checked"></i>
+                                          <i class="fas fa-star checked"></i>
+                                          <i class="fas fa-star"></i>
+                                           <div class="rupe">
+                                              <i class="fas fa-rupee-sign">
+                                                 <strong> 40</strong> <del>55</del>
+                                              </i> 3%off
+                                          </div>
+                                          <button class="buy">
+                                              Order Now
+                                          </button>
+                                          <button class="cart1">
+                                            Add to cart <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        </div>
+        
+ </div>    <br><br><br>
+
+
+ <footer>
+    <div class="align">
+        <div class="item"></div>
+        <div class="item">
+            <h3>Policies</h3>
+            <h4>Privacy</h4>
+            <h4>Terms</h4>
+            <h4>Security</h4>
+            <h4>CSR</h4>
+   
+        </div>
+        <div class="item">
+            <h3> Eat Easily</h3>
+            <h4>About us</h4>
+            <h4>Contact</h4>
+            <h4>Blog</h4>
+            <h4>Services</h4>
+        </div>
+        <div class="item">
+            <h3>Branches</h3>
+            <h4>TamilNadu</h4>
+            <h4>Kerala</h4>
+            <h4>Karnataka</h4>
+            <h4>AndraPradesh</h4>
+        </div>
+      
+    </div>     <br><br><br>
+
+
+    <div class="align1">
+        <div class="item"></div>
+        <div class="item">
+            <i  id="copyright"class="far fa-copyright"> All rights Reserved  2015-2020</i>
+        </div>
+    <div class="item">
+        <input type="text" placeholder="email-address">
+       <input class="subs" type="submit" value="Subscribe">
+      
+    </div>
+    
+        <div class="item">
+          
+            <i id="insta"class="fab fa-instagram-square"></i> 
+            <i id="twit" class="fab fa-twitter"></i>       
+            <i id="facebook"class="fab fa-facebook"></i>
+            <i id="linked"class="fab fa-linkedin"></i>
+           </div>
+    </div>
+    <br><br>
+    </footer>
+    <script src="veg.js"></script>
+
+</body>
+</html>

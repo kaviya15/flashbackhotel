@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ='desription' content='vegetarian food'>
+    <link rel="icon" href="image/go.ico">   
+     <script src="https://kit.fontawesome.com/fe706c5c83.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>payment</title>
+
+<style>
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#mytarget a{
+    color:white;
+}
+a{
+    color:white;
+}
+
+.home{
+    float: right;
+    padding-right: 5rem;
+    font-size: 1.3rem;
+
+
+}
+body{
+    background-color: aliceblue;
+}
+.shipping
+    {
+    display:grid;
+    grid-row-gap: 1.5rem;  
+    width: 50%;
+    padding-left:2rem;
+     padding-top: 2rem;
+     background-color: white;
+    border: 1px groove; 
+    }
+.buygrid
+    {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left:10%;
+}
+.box
+{
+    display: none;
+}
+.subnav{
+    float: right;
+    padding-right: 5rem;
+    font-size: 1.3rem;
+
+}
+
+.header
+{
+    padding:2rem 2rem;
+}
+.align,.align1
+{
+display:grid;
+color:white;
+grid-template-columns: auto auto auto auto;
+}
+        footer{
+    background-color: black;
+}
+#copyright{
+    font-size:2rem;
+}
+#insta{
+  color: crimson;
+  font-size: 3rem;
+  padding-right: 1rem;
+}
+#twit{
+    font-size: 3rem;
+    padding-right: 1rem;
+    color:dodgerblue; 
+}
+#facebook{
+     font-size: 3rem;
+    padding-right: 1rem;
+    color:blue;
+}
+#linked
+{
+    font-size: 3rem;
+    color:dodgerblue;
+}
+  .item1,.grif{
+    font-size: 1.3rem;
+    padding:1rem;
+  }
+  .contain
+  {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 5rem;
+    padding:3rem;
+
+  }
+.main
+{
+    padding:1rem 3rem;
+   
+}
+.pay{
+    border: 1px groove;
+    width: 50%;
+    
+    background-color: white;
+}
+.home{
+    cursor: pointer;
+}
+
+label
+{
+    font-size: 1.5rem;
+}
+button
+{
+    padding:1rem 7rem;
+    font-size: 1rem;
+    background-color: orange;
+}
+input
+{
+    padding:0.5rem 1.5rem;
+    font-size: 1rem;
+}
+.opt
+{
+    font-size: 1.1rem;
+    padding:0.5rem 1rem;   
+}
+.continue
+{
+    
+    font-size: 1rem;
+    width:16rem;
+    background-color: orange;
+}
+h6{
+    font-size: 1.8rem;
+    color:black;
+    text-align: center;
+
+}
+#atm
+{
+    font-size: 5rem;
+}
+.upi, .net
+{
+  display:none;  
+}
+
+  
+  .fab
+  {
+    color:dodgerblue;
+    font-size:2rem;
+  }
+ 
+  .item1 h6{
+padding: 0.51rem 0rem;
+
+  }
+  #credit{
+      color: dodgerblue;
+      font-size:2rem ;
+  }
+@media only screen and (max-width:800px)
+{
+    .buygrid
+    {
+    display: grid;
+    grid-template-columns:auto;
+    margin-left:10%;
+}
+
+.shipping
+    {
+    display:grid;
+    grid-row-gap: 1.5rem;  
+    width: 80%;
+    padding-left:2rem;
+     padding-top: 2rem;
+     background-color: white;
+    border: 1px groove; 
+    }
+    .pay{
+        border: 1px groove;
+        
+        width: 85%;
+        background-color: white;
+    }
+    .contain
+    {
+      display: grid;
+      grid-template-columns:auto;
+      grid-column-gap: 5rem;
+      padding:3rem;
+      margin-left: 3rem;
+  
+    }
+}
+@media only screen  and (max-width:700px)
+{
+   
+.align
+{
+ display:grid;
+ color:white;
+ margin:0rem 0rem 0rem 18rem;
+grid-template-columns: auto;
+}
+.align1
+{
+ display:grid;
+ color:white;
+ margin:0rem 0rem 0rem 12rem;
+grid-template-columns: auto;
+grid-row-gap: 2rem;
+}
+#insta{
+  color: crimson;
+  font-size: 3rem;
+  padding-right: 3rem;
+}
+#twit{
+    font-size: 3rem;
+    padding-right: 3rem;
+    color:dodgerblue; 
+}
+#facebook{
+     font-size: 3rem;
+    padding-right: 3rem;
+    color:blue;
+}
+#linked
+{
+    font-size: 3rem;
+    color:dodgerblue;
+}
+}
+</style>
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <button  data-toggle="collapse" data-target="#mytarget" class="navbar-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand">
+                <a href="index.html"> Welcome to go3</a>
+            </div>
+
+        </div>
+        <div id="mytarget" class="collapse navbar-collapse">
+   
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="dish.html">Home</a></li>
+            <li class="dropdown">
+                <a href=""  data-toggle="dropdown"class="dropdown-toggle">
+                    menu  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li> <a href="veg.html">Veg</a></li>
+                    <li><a href="nonveg.html">Non-Veg</a></li>
+                    <li><a href="snack.html">Snacks</a></li>
+                </ul></li>
+ 
+            <li><a href="about.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="buygrid">
+   <form onsubmit="generate()"class="shipping" id="ship" action="" autocomplete="on">
+       <h2>Shipping  Address</h2>
+    <label for="name"><i class="fas fa-user-circle"></i>  Name <br>
+        <input type="name" id="name" placeholder="kaviya" required minlength="6" malength="50">
+
+    </label>
+<label for="email"> <i class="fas fa-at"></i>Email  <br>
+    <input type="email" id="email" placeholder="go3@gmail.com" required>
+
+</label>
+<label for="number"> <i class="fas fa-phone-alt"></i>Number <br>
+<input type="telephone" id="number" placeholder="9874102563" required minlength="10" maxlength="10">
+</label>
+ <label for="address"><i class="fas fa-address-card"></i>Address <br>
+ <input type="text"  id="address" placeholder="12th Bazar Street "required>
+ </label>
+ <label for="Landmark">Landmark <br>
+    <input type="text"  id="landmark" placeholder="opposite to ....."required>
+    </label>
+ <label for="city">City <br>
+    <input ship
+    type="text"  id="city" placeholder= " Chennai" required>
+    </label>
+    <label for="State">State <br>
+        <input type="text"  id="State" placeholder="TN" required>
+        </label>
+        <label for="code">Zip <br>
+            <input type="text"  id="code" placeholder="632513" required minlength="6" maxlength="6">
+            </label>    
+            <h6>Procced to Payment--></h6>
+<br>
+   </form>   
+<br>
+     <form  onsubmit="nxtbox()" class="pay" id="opening"  action="" autocomplete="on">
+         <div class="header">
+          <h1> Payment Mode</h1>
+           <br>
+        </div>
+          <div class="main">
+              
+   <label for="atm">
+          <input type="radio" id="carding" id="atm" name="pay" required>Card-Payment</label> 
+          <div id="atmcard1" class="atmcard">
+          <div class="cards">
+           <h2>Accepted Cards</h2> <br>
+        <i class="fab fa-cc-visa"> </i>
+      <i class="fab fa-cc-mastercard"></i>
+    
+      <i  id="credit"class="fa fa-credit-card"></i>
+
+   </div> <br>
+   <div id="card">
+    <label for="name">
+    Name on card
+          </label> <br>
+<input type="name" id ="name" placeholder="Chuddkie" required> <br><br>
+<label for="tel">
+    Card Number
+</label> <br> 
+
+<input type="text" id ="tel" placeholder="9999-7777-8888-2222" maxlength="16" minlength="16" required> <br> <br>
+<input type="text" id="cvv" placeholder="CVV" minlength="3" maxlength="3" required> <br><br>
+<select  class="opt"name="" id="month" required>
+    <option value="0" selected>expiry MM</option>
+    <option value="1">01</option>
+    <option value="2">02</option>
+    <option value="2">03</option>
+    <option value="2">04</option>
+    <option value="2">05</option>
+    <option value="2">06</option>
+    <option value="2">07</option>
+    <option value="2">08</option>
+    <option value="2">09</option>
+    <option value="2">10</option>
+    <option value="2">11</option>
+    <option value="2">12</option>
+</select>
+<select class="opt" name="" id="year" required>
+    <option value="0" selected>expiry Yr</option>
+    <option value="1">2020</option>
+    <option value="2">2021</option>
+    <option value="2">2022</option>
+    <option value="2">2023</option>
+    <option value="2">2024</option>
+    <option value="2">2025</option>
+    <option value="2">2026</option>
+    <option value="2">2027</option>
+    <option value="2">2028</option>
+    <option value="2">2029</option>
+    <option value="2">2030</option>
+    <option value="2">2031</option>
+    <option value="2">2032</option>
+    <option value="2">2033</option>
+    <option value="2">2034</option>
+    <option value="2">2035</option>
+    <option value="2">2036</option>
+    <option value="2">2037</option>
+    <option value="2">2038</option>
+    <option value="2">2039</option>
+    <option value="2">2040</option>
+
+
+</select>
+</div></div> <br>
+<br>
+ 
+<button>Confirm</button>
+</div>
+
+   </form>
+   </div>
+ 
+<script>
+        /*var cont = document.g  
+etElementsByClassName('continue');
+        var open = document.getElementById('open');
+        var name = document.getElementById('name').value;
+        var tel = document.getElementById('tel').value;
+        var cvv = document.getElementById('cvv').value;
+        var shop = document.getElementById('ship');
+        var x = document.getElementById('alert');
+        var card = document.getElementById('card');
+  function alertt()
+  {
+          open.style.display="none";
+          shop.style.display="none";
+          document.write("your order Has been sucessfully Registered");
+  }*/
+
+  var homepage = document.querySelector('.home');
+            homepage.addEventListener('click',()=>
+            {
+                   location.href="cate.html";
+            });
+  function generate()
+  {
+ 
+    var val1 = document.getElementById('name');
+    var val2 = document.getElementById('email');
+    var val3 = document.getElementById('address');
+    var val4= document.getElementById('number');
+    var val5= document.getElementById('code');
+    var open = document.getElementById('open');
+    var shop = document.getElementById('ship');
+
+if(val1.value =="" || val2.value == "" || val3.value =="" || val4.value=="" || val5.value=="")
+{
+    alert("Enter your details");
+}
+else 
+{
+    alert(" select your Payment option");
+}
+}  
+   function nxtbox()
+   {/*
+        var name = document.getElementById('name').value;
+        var tel = document.getElementById('tel').value;
+        var cvv = document.getElementById('cvv').value;
+        if(name==""|| tel==""||cvv=="")
+        {*/
+    var val1 = document.getElementById('name');
+    var val2 = document.getElementById('email');
+    var val3 = document.getElementById('address');
+    var val4= document.getElementById('number');
+    var val5= document.getElementById('code');
+    var open = document.getElementById('open');
+    var shop = document.getElementById('ship');
+
+
+if(val1.value =="" || val2.value == "" || val3.value =="" || val4.value=="" || val5.value=="")
+{
+    alert("Enter your shipping  details");
+}
+else 
+{
+    alert(" Thanks for your Order");
+}
+        
+   }
+        </script> <br><br><br>
+     
+
+     <footer>
+        <div class="align">
+            <div class="item"></div>
+            <div class="item">
+                <h3>Policies</h3>
+                <h4>Privacy</h4>
+                <h4>Terms</h4>
+                <h4>Security</h4>
+                <h4>CSR</h4>
+       
+            </div>
+            <div class="item">
+                <h3> Eat Easily</h3>
+                <h4>About us</h4>
+                <h4>Contact</h4>
+                <h4>Blog</h4>
+                <h4>Services</h4>
+            </div>
+            <div class="item">
+                <h3>Branches</h3>
+                <h4>TamilNadu</h4>
+                <h4>Kerala</h4>
+                <h4>Karnataka</h4>
+                <h4>AndraPradesh</h4>
+            </div>
+          
+        </div>     <br><br><br>
+    
+    
+        <div class="align1">
+            <div class="item"></div>
+            <div class="item">
+                <i  id="copyright"class="far fa-copyright"> All rights Reserved  2015-2020</i>
+            </div>
+        <div class="item">
+            <input type="text" placeholder="email-address">
+           <input class="subs" type="submit" value="Subscribe">
+          
+        </div>
+        
+            <div class="item">
+              
+                <i id="insta"class="fab fa-instagram-square"></i> 
+                <i id="twit" class="fab fa-twitter"></i>       
+                <i id="facebook"class="fab fa-facebook"></i>
+                <i id="linked"class="fab fa-linkedin"></i>
+               </div>
+        </div>
+        <br><br>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </body>
+        
+</html>
